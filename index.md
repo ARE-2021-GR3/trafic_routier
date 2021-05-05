@@ -28,8 +28,11 @@ A traffic jam, usually a car traffic jam, greatly reduces the speed of vehicles 
 **Critère(s) d'évaluation :**
 
 ## Présentation structurée des résultats
-Nous avons choisis de modéliser le trafic routier grâce à un algorithme python. Notre algorithme simule le comportement des automobilistes.  
-Présentation du choix de modélisation, des outils, du code et des résultats (tableaux, courbes, animations...) (**avec une analyse critique**).
+Nous avons choisis de modéliser le trafic routier grâce à un algorithme python qui simule le comportement des automobilistes en cas d'apparition dun bouchon. Nous avons choisis de représenter la route par un tableau de 0, les 1 représentant les voitures. Ainsi il est facile de paramétrer le nombre de voitures, la taille de la route et notamment de lui ajouter des voies. Les tableaux sont créés grâce à la bibliothèque numpy. 
+
+Notre code comporte 3 fonctions principales: la premiere crée un tableau de longueur et largeur données, la deuxieme permet d'afficher la route dans la console et enfin la dernière permets aux vehicules de se déplacer. Elle fait aussi apparaitre aléatoirement un bouchon sur la route. Ce qui nous permets ainsi d'observer, au fur et à mesure des itérations, si les automobilistes évitent le bouchon ou si ils sont à l'arrêt.
+
+Pour les résultats nous avons décider de comparer les ratios de saturation : on fixe la taille de la route et on augmente le nombre de voiture jusqu'à ce qu'un bouchon apparaisse. On divise donc le nombre de voiture par la surface du tableau pour avoir ce ratio.
 
 ## Lien vers page de blog : <a href="blog.html"> C'est ici ! </a>
 
